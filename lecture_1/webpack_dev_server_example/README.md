@@ -1,17 +1,34 @@
-# Webpack example
+# Webpack-dev-server example
 
 To use:
 ```
 npm install
-webpack
+npm install webpack-dev-server -g
+webpack-dev-server
 open index.html // On Mac, this is valid command in terminal
 ```
 
-Open the console in your browser, you should see "boop"
+Open the console in your browser, you should see:
+```
+Boop!
+```
+
+Now open main.js and add a line:
+```
+console.log("Beep!')
+```
+
+Refresh the page and you should now see in the browser console
+```
+Boop!
+Beep!
+```
 
 ## Explanation
 npm install installs all the package dependencies
 
-Webpack bundles the file tree extracted from main.js into a single file - bundle.js. It has a babel-loader loader, which transpiles the es2015 code into standard javascript
+npm install webpack-dev-server -g installs the dev server on your computer to a global directory, which means it can be used outside of this folder. Note that in the homeworks, we do not want to install anything globally.
 
-Opening index.html shows the results. The index.html requires the generated bundle.js
+webpack-dev-server bundles the javascript files, starts watching them and creates a server that server the file.
+
+When you make changes to the main.js, then the webpack-dev-server automatically detects changes and re-bundles the files, serving new files.
