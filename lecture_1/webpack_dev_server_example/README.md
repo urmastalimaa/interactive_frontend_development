@@ -5,9 +5,9 @@ To use:
 npm install
 npm install webpack-dev-server -g
 webpack-dev-server
-open index.html // On Mac, this is valid command in terminal
 ```
 
+Open http://localhost:3000 in your browser
 Open the console in your browser, you should see:
 ```
 Boop!
