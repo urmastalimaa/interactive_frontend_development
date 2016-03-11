@@ -3,6 +3,7 @@
 To use:
 ```
 npm install
+npm install -g browserify
 browserify -t [ babelify --presets [ es2015 ] ] ./main.js > ./bundle.js
 open index.html // On Mac, this is valid command in terminal
 ```
