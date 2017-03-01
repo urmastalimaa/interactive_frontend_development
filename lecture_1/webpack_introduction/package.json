@@ -1,0 +1,14 @@
+{
+  "name": "IFD-webpack-introduction",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "babel-core": "6.17.0",
+    "babel-loader": "6.2.7",
+    "babel-preset-env": "^1.1.10",
+    "webpack": "^2.2.1"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  }
+}
