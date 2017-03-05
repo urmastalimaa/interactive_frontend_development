@@ -1,0 +1,13 @@
+{
+  "name": "IFD-webpack-css-modules",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0",
+    "webpack": "^2.2.1"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  }
+}
