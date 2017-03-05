@@ -1,0 +1,11 @@
+{
+  "presets": [
+    ["env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["last 5 Chrome versions", "last 5 Firefox versions"]
+      }
+    }]
+  ],
+  "plugins": ["transform-object-rest-spread"]
+}
