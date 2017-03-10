@@ -1,4 +1,4 @@
-# Webpack example
+# Webpack development server example
 
 ## Running the application
 
