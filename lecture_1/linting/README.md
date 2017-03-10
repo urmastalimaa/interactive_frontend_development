@@ -1,6 +1,6 @@
-# Webpack example
+# Linting example (eslint)
 
-## Running the application
+## Linting source code
 
 ```
 npm install
