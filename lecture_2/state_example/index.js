@@ -40,17 +40,6 @@ class CommentList extends Component {
   }
 }
 
-class CommentForm extends Component {
-  render() {
-    return (
-      <button className='comment-form' onClick={this.props.onSubmit}>
-        {this.props.text}
-      </button>
-    );
-  }
-}
-CommentForm.defaultProps = {text: 'Submit a comment'};
-
 /*
   `App` component now has state: inserted comments.
   Initial comments state is set to empty array in constructor.
@@ -71,8 +60,8 @@ class App extends Component {
     setInterval(() => {
       this.setState({
         comments: this.state.comments.concat([
-          {author: 'React Reactson', text: `This is one comment #{id}`, id: id},
-          {author: 'Java Scriptson', text: `This is another comment #{id + 1}`, id: id + 1}
+          {author: 'React Reactson', text: `This is one comment ${id}`, id: id},
+          {author: 'Java Scriptson', text: `This is another comment ${id + 1}`, id: id + 1}
         ])
       });
       id += 2;
@@ -84,7 +73,6 @@ class App extends Component {
       <div className='app'>
         <h1>Comments</h1>
         <CommentList comments={this.state.comments}/>
-        <CommentForm onSubmit={() => console.log('posting comment!')} />
       </div>
     );
   }
