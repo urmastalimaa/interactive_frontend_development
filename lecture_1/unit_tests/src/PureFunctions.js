@@ -1,9 +1,9 @@
 export const merge = (obj1, obj2) =>
   Object.assign({}, obj1, obj2);
 
-// The `{...obj, }`  construction requires `transform-object-rest-spread` babel
+// The `{...obj, }` construction requires `transform-object-rest-spread` babel
 // plugin. Either install the plugin and add it to babel configuration or use
-// merge(obj1, {[key]: value}) instead.
+// merge(obj, {[key]: value}) instead.
 export const associate = (key, value, obj) =>
   ({...obj, [key]: value});
 
