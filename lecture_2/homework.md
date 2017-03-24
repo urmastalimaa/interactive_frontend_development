@@ -11,6 +11,8 @@
   * Game ends when user guesses the target number exactly
   * Display "You won!" when user guessed correctly
   * Game should be implemented as an ES6 class and it should hold all relevant state
+  * *Game must only hold game logic, it should not be a React component*
+  * A corresponding React component should use an instance of _Game_
   * All Game code paths must be unit tested
 * User input
   * Create an <input> element which accepts only numbers
