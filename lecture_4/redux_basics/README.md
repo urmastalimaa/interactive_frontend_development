@@ -28,5 +28,7 @@ extract that logic into _selector_ functions and test those in isolation.
 
 `CommentForm` is changed to not have any internal state. This might or might not be desirable, depends on the use case. Check `CommentForm` for more information.
 
+Redux dev tools are integrated with store if `devToolsExtension` is present on window.
+
 ## Additional resources
 [Redux official guides](redux.js.org)
