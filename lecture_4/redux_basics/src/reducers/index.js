@@ -30,7 +30,7 @@ const commentReducer = (state = initialState, action) => {
     case TEXT_SET: {
       return {...state, text: action.payload};
     }
-	default:
+    default:
       return state;
   }
 };
