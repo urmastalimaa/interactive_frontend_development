@@ -1,3 +1,5 @@
+* No new functionality
+
 # Refactor
 * Apply feedback for previous homeworks, get ready for new functionality
 
