@@ -11,7 +11,7 @@ const mapStateToProps = (state, ownProps) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  onChange: (author) => dispatch(filterSet(author)),
+  onChange: (filter) => dispatch(filterSet(filter)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Filter);

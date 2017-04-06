@@ -11,6 +11,8 @@ const reducer = (previousState = initialState, action) => {
         nrOfAdditions: previousState.nrOfAdditions + 1
       };
     }
+    default:
+      return previousState;
   }
 };
 

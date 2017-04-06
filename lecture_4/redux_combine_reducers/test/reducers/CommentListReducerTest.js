@@ -12,18 +12,13 @@ describe('CommentListReducer', () => {
 
   it('adds a comment when comment submitted', () => {
     const firstComment = {author: 'first-author', text: 'first-text'};
-    const secondComment = {author: 'second-author', text: 'second-text'};
 
     const stateAfterFirstComment = reducer(undefined, commentSubmitted(firstComment));
     // Previous state can be passed to the reducer
-    const stateAfterSecondComment = reducer(stateAfterFirstComment, commentSubmitted(secondComment));
-    expect(stateAfterSecondComment.length).to.eq(2);
+    expect(stateAfterFirstComment.length).to.eq(1);
 
     expect(stateAfterSecondComment[0].author).to.eq('first-author');
     expect(stateAfterSecondComment[0].text).to.eq('first-text');
-
-    expect(stateAfterSecondComment[1].author).to.eq('second-author');
-    expect(stateAfterSecondComment[1].text).to.eq('second-text');
   });
 });
 
