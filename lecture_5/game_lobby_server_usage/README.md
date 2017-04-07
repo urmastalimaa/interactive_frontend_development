@@ -9,7 +9,7 @@ npm start
 
 Inspect src/index.js to see how to create requests to Game Lobby Server.
 Inspect console output to see response format.
-Alternatively check [https://www.npmjs.com/package/game_lobby_server#endpoints](package documentation).
+Alternatively check [https://bitbucket.org/urmastalimaa/game_lobby_server/src/5c9b2405479dbb59bb28992774939921b9e59549/README.md?at=v1.0.7&fileviewer=file-view-default](package documentation).
 
 Game Lobby Server is created with latency 1000 milliseconds and 20% of
 responses are forced to be failures (useful for integration testing error
@@ -17,4 +17,4 @@ handling). Refresh to see different responses.
 
 ## Explanation
 
-Example of using Game Lobby Server v1.0.6.
+Example of using Game Lobby Server v1.0.7.
