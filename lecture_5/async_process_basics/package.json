@@ -1,5 +1,5 @@
 {
-  "name": "IDF-redux-combine-reducers",
+  "name": "IDF-async_process_basics",
   "version": "0.0.1",
   "private": true,
   "devDependencies": {

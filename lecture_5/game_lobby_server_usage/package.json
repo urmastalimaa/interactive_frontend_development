@@ -1,5 +1,5 @@
 {
-  "name": "IDF-game-lobby-server-example",
+  "name": "IDF-game_lobby_server",
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
