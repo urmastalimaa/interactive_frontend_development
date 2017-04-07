@@ -8,6 +8,9 @@ import App from './containers/App';
 import commentServerMiddleware from './middlewares/CommentServerMiddleware';
 import loggingMiddleware from './middlewares/LoggingMiddleware';
 
+// `__REDUX_DEVTOOLS_EXTENSION_COMPOSE__` will make sure that redux devtools
+// store enhancher is applied last so that it will not miss any actions. See
+// http://redux.js.org/docs/api/applyMiddleware.html#tips for more information.
 const composeStoreEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 let store = createStore(
