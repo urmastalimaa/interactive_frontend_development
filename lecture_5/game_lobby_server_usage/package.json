@@ -20,6 +20,6 @@
     "start-server": "game_lobby_server --delay=1000 --failure-percentage=30"
   },
   "dependencies": {
-    "game_lobby_server": "^1.0.5"
+    "game_lobby_server": "^1.0.6"
   }
 }

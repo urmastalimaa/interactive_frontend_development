@@ -10,7 +10,7 @@ jsonAjax(
     jsonAjax(
       'http://localhost:8081/games/' + game.id + '/moves',
       'POST',
-      {move: 3},
+      {guess: 3},
       (moveResponse) => {
         console.log('Got move response', game.id, moveResponse);
       },
@@ -34,7 +34,7 @@ jsonAjax(
     jsonAjax(
       'http://localhost:8081/games/' + game.id + '/moves',
       'POST',
-      {move: 'basil'},
+      {guess: 'basil'},
       (moveResponse) => {
         console.log('Got move response', game.id, moveResponse);
       },
