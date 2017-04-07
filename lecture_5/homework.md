@@ -1,4 +1,4 @@
-# Use [Game Lobby Server](https://www.npmjs.com/package/game_lobby_server) to play games
+# Use [Game Lobby Server version 1.0.7](https://www.npmjs.com/package/game_lobby_server) to play games
 
 * Use a POST request to Game Lobby Server `/games` path to create a game 
   (Use `{type: 'guess_word'}` or `{type: 'guess_number'}` as payloads for requests)
