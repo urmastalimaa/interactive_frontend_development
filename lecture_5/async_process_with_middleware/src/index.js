@@ -5,7 +5,8 @@ import {createStore, applyMiddleware, compose} from 'redux';
 import thunk from 'redux-thunk';
 import reducer from './reducers';
 import App from './containers/App';
-import CommentServerMiddleware from './middlewares/CommentServerMiddleware';
+import commentServerMiddleware from './middlewares/CommentServerMiddleware';
+import loggingMiddleware from './middlewares/LoggingMiddleware';
 
 const composeStoreEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -14,7 +15,8 @@ let store = createStore(
   composeStoreEnhancers(
     applyMiddleware(
       thunk,
-      CommentServerMiddleware
+      commentServerMiddleware,
+      loggingMiddleware
     )
   )
 );
