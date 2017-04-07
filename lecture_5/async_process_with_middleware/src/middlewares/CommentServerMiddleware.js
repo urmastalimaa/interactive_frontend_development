@@ -13,16 +13,12 @@ const ACTION_TYPE_TO_SERVER_ACTION = {
   [COMMENT_POST_REQUESTED]: postComment
 };
 
-const initializeMiddleware = () => {
-  return (store) => (next) => (action) => {
-    const serverAction = ACTION_TYPE_TO_SERVER_ACTION[action.type];
-    if (serverAction) {
-      serverAction(action.payload)(store.dispatch);
-    }
-    return next(action);
-  };
+const commentServerMiddleware = (store) => (next) => (action) => {
+  const serverAction = ACTION_TYPE_TO_SERVER_ACTION[action.type];
+  if (serverAction) {
+    serverAction(action.payload)(store.dispatch);
+  }
+  return next(action);
 };
 
-const middleware = initializeMiddleware();
-
-export default middleware;
+export default commentServerMiddleware;
