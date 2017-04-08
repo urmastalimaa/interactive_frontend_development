@@ -17,8 +17,8 @@ describe('CommentListReducer', () => {
     // Previous state can be passed to the reducer
     expect(stateAfterFirstComment.length).to.eq(1);
 
-    expect(stateAfterSecondComment[0].author).to.eq('first-author');
-    expect(stateAfterSecondComment[0].text).to.eq('first-text');
+    expect(stateAfterFirstComment[0].author).to.eq('first-author');
+    expect(stateAfterFirstComment[0].text).to.eq('first-text');
   });
 });
 
