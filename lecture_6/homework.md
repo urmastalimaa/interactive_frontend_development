@@ -5,6 +5,7 @@
 * Test all created presentational components (same rules as for previous homeworks)
 * Test all created reducers (same rules as for previous homeworks)
 * WebSocket protocol usage is not required to be tested.
+* Use a **middleware** to manage WebSocket connections
 
 ## Connect button
 
