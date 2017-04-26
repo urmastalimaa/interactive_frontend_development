@@ -28,9 +28,9 @@ export const connect = ({onOpen, onClose, onMessage, parameters = {}}) => {
     onClose({reason});
   };
 
-  websocketConnection.onmessage = (message) => {
+  websocketConnection.onmessage = (messageEvent) => {
     // In this example `data` is JSON encoded in an UTF-8 String
-    const payload = message.data;
+    const payload = messageEvent.data;
 
     let parsedMessage;
     try {
