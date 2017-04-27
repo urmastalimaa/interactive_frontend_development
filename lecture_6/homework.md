@@ -1,4 +1,4 @@
-# Connect to [Game Lobby Server](https://www.npmjs.com/package/game_lobby_server) version 1.1.1 WebSocket API
+# Connect to [Game Lobby Server](https://www.npmjs.com/package/game_lobby_server) version 1.1.2 WebSocket API
 
 [WebSocket API documentation](https://bitbucket.org/urmastalimaa/game_lobby_server/src/641a82fcfd1f3e4f6c3a1901ab5fc80e369cc92c/README.md?at=v1.1.1&fileviewer=file-view-default#markdown-header-websocket-api).
 
