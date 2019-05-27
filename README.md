@@ -1,3 +1,6 @@
+**Superseded by https://github.com/urmastalimaa/interactive-frontend-development**
+
+
 # Interactive frontend development
 An University of Tartu seminar about front-end development with JavaScript.
 
